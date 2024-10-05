@@ -1,9 +1,24 @@
+h1 {
+    text-align: center;  /* Align the text horizontally in the center */
+    font-size: 36px;     /* Adjust the font size as needed */
+    margin-top: 0;       /* Remove any default margin at the top */
+    padding: 20px 0;     /* Add some padding to give space between the top and the text */
+    width: 100%;         /* Ensure it stretches the entire width */
+    position: fixed;     /* Fix the header at the top of the page */
+    top: 0;              /* Stick the header to the top */
+    background-color: #f0f0f0;  /* Give the header a background color */
+    z-index: 1;          /* Ensure the header stays on top of other elements */
+}
+
+
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* 100% of the viewport height */
+    margin: 0;                /* Remove default body margin */
+    flex-direction: column;   /* Stack the button and message vertically */
+    background: linear-gradient(135deg, #e4e1e1, #886969);  /* Give the header a background color */
 }
 
 .FirstButton {
@@ -21,4 +36,10 @@ body {
 
 .FirstButton:active {
     filter: invert(100%);
+}
+
+/* Adjust the message position */
+#message {
+    margin-top: 20px; /* Add space below the button for the message */
+    font-size: 18px;
 }
